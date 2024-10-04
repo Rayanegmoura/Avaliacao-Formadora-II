@@ -1,0 +1,256 @@
+/* PADRÃO DA PÁGINA */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    background-color: #000;
+    color: #fff;
+}
+
+span {
+    color: #d450e3 !important;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #606060;
+}
+
+p {
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+
+i {
+    color: #fff;
+}
+
+
+.interface {
+    margin-left: 60px;
+    margin: 0;
+}
+
+.flex, .btn-minim, .redes-sociais  {
+    display: flex;
+}
+
+/* MENU LATERAL */
+
+nav.menu-lateral {
+    width: 60px;
+    height: 100%;
+    background-color: #00000029;
+    padding: 40px 0 40px 5px;
+    box-shadow: 3px 0 15px #d450e3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.ativo {
+    background-color: #d450e3;
+    box-shadow: 0 0 15px #d450e3;
+}
+
+ul li.item-menu:hover {
+    background-color: #e379efd0;
+    box-shadow: 0 0 15px #e379efd0;
+}
+
+ul li.item-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    color: #fff !important;
+    margin-left: 70px;
+    transition: 1s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu .icon > i {
+    font-size: 30px;
+    margin-left: 30%
+}
+
+/* PÁGINA INICIAL */
+
+section.topo-site {
+    padding: 230px 8%;
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-transform: uppercase;
+}
+
+.topo-site .img-home img {
+    width: 300px;
+    height: 200px;
+}
+
+.topo-site .txt-home span{
+    color: #606060!important;
+  }
+  
+
+/* PÁGINA QUEM SOMOS */
+
+section.sobre {
+    padding: 40px 8%;
+}
+
+section.sobre .flex {
+    gap: 60px;
+    justify-content: space-around;
+}
+
+.sobre .img-sobre img {
+    width: 500px;
+    height: 560px;
+    box-shadow: 5px 5px 5px #d450e3;
+}
+
+.sobre .txt-sobre .fino {
+    color: #fff !important;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.sobre .txt-sobre .negrito {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.sobre .txt-sobre p {
+    text-align: justify;
+    font-weight: 300;
+}
+
+.sobre .txt-sobre h1 {
+    text-align: start;
+}
+
+.sobre .redes-sociais {
+    gap: 5px;
+    flex-direction: column;
+}
+
+.sobre .redes-sociais button {
+    padding: 10px;
+    background-color: #606060;
+    border: none;
+}
+
+.sobre .redes-sociais button:hover {
+    background-color: #d450e3;
+    cursor: pointer;
+}
+
+.sobre .redes-sociais i {
+    color: #fff;
+    font-size: 25px;
+}
+
+/* PÁGINA MINI MUNDO */
+
+section.minim {
+    padding: 40px 8%;
+}
+
+section.minim .flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.minim .txt-minim {
+    width: 900px;
+    box-shadow: 5px 5px 5px #d450e3;
+    padding: 20px 5px;
+}
+
+.minim .txt-minim p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.minim .btn-minim {
+    padding: 40px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 20px;
+}
+
+.minim .btn-minim button {
+    padding: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: #4141417a;
+    color: #fff;
+}
+
+.minim .btn-minim button:hover {
+    box-shadow: 5px 5px 5px #d450e3;
+}
