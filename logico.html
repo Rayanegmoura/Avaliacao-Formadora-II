@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Sobre</title>
+    <title>Modelo Lógico</title>
 </head>
 <body>
     
@@ -18,72 +18,68 @@
         <ul>
             <li class="item-menu">
                 <a href="index.html">
-                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="icon"><i class="bi bi-house" title="Início"></i></span>
                     <span class="txt-link">Início</span>
                 </a>
             </li>
             
             <li class="item-menu">
                 <a href="sobre.html">
-                    <span class="icon"><i class="bi bi-file-person"></i></span>
+                    <span class="icon"><i class="bi bi-file-person" title="Sobre"></i></span>
                     <span class="txt-link">Sobre</span>
                 </a>
             </li>
 
             <li class="item-menu">
                 <a href="minimundo.html">
-                    <span class="icon"><i class="bi bi-database"></i></span>
+                    <span class="icon"><i class="bi bi-globe2" title="MiniMundo"></i></span>
                     <span class="txt-link">MiniMundo</span>
                 </a>
             </li>
 
             <li class="item-menu">
-                <a href="fisico.html">
-                    <span class="icon"><i class="bi bi-database"></i></span>
-                    <span class="txt-link">Físico</span>
+                <a href="conceitual.html">
+                    <span class="icon"><i class="bi bi-diagram-3" title="Conceitual"></i></span>
+                    <span class="txt-link">Conceitual</span>
                 </a>
             </li>
 
             <li class="item-menu ativo">
                 <a href="logico.html">
-                    <span class="icon"><i class="bi bi-database"></i></span>
+                    <span class="icon"><i class="bi bi-hdd-stack" title="Lógico"></i></span>
                     <span class="txt-link">Lógico</span>
                 </a>
             </li>
 
             <li class="item-menu">
-                <a href="conceitual.html">
-                    <span class="icon"><i class="bi bi-database"></i></span>
-                    <span class="txt-link">Conceitual</span>
+                <a href="fisico.html">
+                    <span class="icon"><i class="bi bi-hdd-network" title="Físico"></i></span>
+                    <span class="txt-link">Físico</span>
                 </a>
             </li>
         </ul>
     </nav><!--menu-lateral-->
 
-    <script src="menu.js"></script>
+    <script src="/js/script.js"></script>
 
     <main>
-        <section class="minim">
+        <section class="modelo-logico">
             <div class="interface">
                 <h1>Modelo <span>Lógico.</span></h1>
                 <div class="flex">
-                    <div class="topo-minim">
-                        <div class="txt-minim">
-                        <p>Uma livraria deseja criar um sistema de gestão de estoque e vendas. A livraria vende livros que possuem um título, um ISBN único e são escritos por um ou mais autores. Cada autor tem um nome e um identificador único.</p>
-                        <p>A livraria possui diversas filiais, e cada filial tem um endereço e um identificador único. Cada filial pode ter várias cópias de um livro em estoque, e o estoque pode variar entre as filiais.</p>
-                        <p>Clientes frequentam a livraria e realizam compras. Cada cliente tem um CPF único, nome e endereço de e-mail. Cada compra é realizada em uma única filial e pode incluir múltiplos livros. A data da compra também é registrada.</p>
-                    
-                        </div><!--txt-sobre-->
+                    <div class="mod-logico">
+                        <div class="txt-logico">
+                        <h4>O modelo lógico é uma representação estruturada dos dados de um sistema, que mostra como são armazenados e como se relacionam.</h4>
+                        </div><!--txt-logico-->
 
-                        <div class="btn-minim">
-                            <a href="/logico.html"><button>Modelo Lógico</button></a>
-                            <a href="/conceitual.html"><button>Modelo Conceitual</button></a>
-                            <a href="/fisico.html"><button>Modelo Físico</button></a>
-                        </div><!--btn-minim-->
-                    </div><!--topo-minim-->
+                        <div class="img-logico">
+                            <img src="/img/mlogico.png" alt="modelo logico"/>
+                        </div><!--img-conceitual-->
+
+                    </div><!--mod-conceitual-->
                 </div><!--flex-->
             </div><!--interface-->
-        </section><!--topo-site-->
+        </section><!--modelo-conceitual-->
     </main>
 </body>
 </html>

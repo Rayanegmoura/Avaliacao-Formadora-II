@@ -10,6 +10,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     background-color: #000;
     color: #fff;
+    overflow: hidden;
 }
 
 span {
@@ -50,7 +51,7 @@ i {
     margin: 0;
 }
 
-.flex, .btn-minim, .redes-sociais  {
+.flex {
     display: flex;
 }
 
@@ -60,7 +61,7 @@ nav.menu-lateral {
     width: 60px;
     height: 100%;
     background-color: #00000029;
-    padding: 40px 0 40px 5px;
+    padding: 40px 5px;
     box-shadow: 3px 0 15px #d450e3;
     position: fixed;
     top: 0;
@@ -81,7 +82,7 @@ nav.menu-lateral.expandir{
 }
 
 .btn-expandir > i {
-    font-size: 24px;
+    font-size: 34px;
     cursor: pointer;
 }
 
@@ -132,7 +133,7 @@ ul li.item-menu .icon > i {
 /* PÁGINA INICIAL */
 
 section.topo-site {
-    padding: 230px 8%;
+    padding: 150px 15%;
 }
 
 section.topo-site .flex {
@@ -165,7 +166,7 @@ section.sobre .flex {
 
 .sobre .img-sobre img {
     width: 500px;
-    height: 560px;
+    height: 600px;
     box-shadow: 5px 5px 5px #d450e3;
 }
 
@@ -190,13 +191,14 @@ section.sobre .flex {
 }
 
 .sobre .redes-sociais {
+    display: flex;
     gap: 5px;
     flex-direction: column;
 }
 
 .sobre .redes-sociais button {
     padding: 10px;
-    background-color: #606060;
+    background-color: #4141417a;
     border: none;
 }
 
@@ -213,7 +215,7 @@ section.sobre .flex {
 /* PÁGINA MINI MUNDO */
 
 section.minim {
-    padding: 40px 8%;
+    padding: 40px 20%;
 }
 
 section.minim .flex {
@@ -222,9 +224,8 @@ section.minim .flex {
 }
 
 .minim .txt-minim {
-    width: 900px;
     box-shadow: 5px 5px 5px #d450e3;
-    padding: 20px 5px;
+    padding: 25px 5px;
 }
 
 .minim .txt-minim p {
@@ -233,6 +234,7 @@ section.minim .flex {
 }
 
 .minim .btn-minim {
+    display: flex;
     padding: 40px;
     position: absolute;
     top: 85%;
@@ -249,8 +251,256 @@ section.minim .flex {
     text-transform: uppercase;
     background-color: #4141417a;
     color: #fff;
+    border: 2px solid #d450e3
 }
 
 .minim .btn-minim button:hover {
     box-shadow: 5px 5px 5px #d450e3;
+}
+
+/* PÁGINA MODELO CONCEITUAL */
+
+section.modelo-conceitual {
+    padding: 40px 8%;
+}
+
+section.modelo-conceitual .flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.modelo-conceitual .txt-conceitual h4 {
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.modelo-conceitual .img-conceitual img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #606060;   
+    box-shadow: 5px 5px 5px #d450e3;
+}
+
+
+/* PÁGINA MODELO LÓGICO */
+
+section.modelo-logico {
+    padding: 40px 8%;
+}
+
+section.modelo-logico .flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.modelo-logico .txt-logico h4 {
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.modelo-logico .img-logico img {
+    width: 100%;
+    height: 450px;
+    border: 2px solid #606060;   
+    box-shadow: 5px 5px 5px #d450e3;
+}
+
+/* PÁGINA MODELO FÍSICO */
+
+section.modelo-fisico {
+    padding: 40px 8%;
+}
+
+section.modelo-fisico .flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.modelo-fisico .txt-fisico h4 {
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.modelo-fisico .btn-fisico {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+   
+}
+
+.modelo-fisico .btn-fisico button {
+    padding: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: #4141417a;
+    color: #fff;
+    border: 2px solid #d450e3;
+}
+
+.modelo-fisico .btn-fisico button:hover {
+    box-shadow: 5px 5px 5px #d450e3;
+}
+
+.modelo-fisico .btn-fisico form p {
+    font-size: 17px;
+    text-align: center;
+}
+
+.modelo-fisico .btn-fisico a {
+    color: #d450e3;
+    text-decoration: none;
+}
+
+modelo-fisico .btn-fisico a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1020px) {
+
+    /* DIV CLASS */
+
+    .flex {
+        flex-direction: column;
+        margin: 20px 0 0 0;
+    }
+
+    /* PADRÃO */
+
+    body {
+        overflow: auto;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    /* MENU */
+
+    nav.menu-lateral {
+        width: 50px;
+        height: 7%;
+        padding: 5px 0px;
+    }
+    
+    nav.menu-lateral.expandir {
+        height: 100%;
+    }
+
+    .btn-expandir {
+        padding: 5;        
+    }
+
+    ul li.item-menu .icon > i {
+        margin-left: 2%
+    }
+
+    /* HOME */
+
+    section.topo-site {
+        padding: 40px 8%;
+    }
+
+    section.topo-site .flex {
+        text-align: center;
+    }
+
+    .topo-site .t-site{
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        z-index: -7;
+    }
+     
+    /* QUEM SOU */
+
+    section.sobre {
+        padding: 40px 8%;
+    }
+
+    section.sobre .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sobre .img-sobre img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre .txt-sobre .fino {
+        font-size: 39px;
+    }
+
+    .sobre .txt-sobre .negrito {
+        font-size: 43px;
+    }
+
+    .sobre .redes-sociais {
+        flex-direction: row;
+    }
+
+    .sobre .redes-sociais i {
+        font-size: 35px;
+    }
+
+    /* MINI MUNDO */
+
+    section.minim {
+        padding: 40px 8%;
+    }
+
+    .minim .btn-minim {
+        position: static;
+        transform: none;
+        padding: 20px;
+        margin: 20px;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    /* MODELO CONCEITUAL */
+
+    section.modelo-conceitual {
+        padding: 40px 10%;
+    }
+
+    /* MODELO LÓGICO */
+
+    section.mondelo-logico {
+        padding: 40px 8%;
+    }
+
+    .modelo-logico .img-logico img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* MODELO FÍSICO */
+
+    section.modelo-fisico {
+        padding: 40px 8%;
+    }
+
+    .modelo-fisico .btn-fisico {
+        z-index: -7;
+    }
+
 }
